@@ -343,11 +343,11 @@ async function sendMessage() {
     try {
 
         const response = await fetch(
-            `http://127.0.0.1:8000/chat?user_input=${encodeURIComponent(message)}`,
-            {
-                method: "POST"
-            }
-        );
+    `https://city-intelligence-system.onrender.com/chat?user_input=${encodeURIComponent(message)}`,
+    {
+        method: "POST"
+    }
+);
 
         const data = await response.json();
 
