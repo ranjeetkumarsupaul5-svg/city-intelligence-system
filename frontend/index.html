@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>City Intelligence</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">◉</div>
+
+                <div>
+                    <h2>CITY</h2>
+                    <span>INTELLIGENCE</span>
+                </div>
+            </div>
+
+            <nav>
+
+                <div class="nav-item active">
+                    <span>⌂</span>
+                    Dashboard
+                </div>
+
+                <div class="nav-item">
+                    <span>◉</span>
+                    AI Chat
+                </div>
+
+                <div class="nav-item">
+                    <span>☁</span>
+                    Weather
+                </div>
+
+                <div class="nav-item">
+                    <span>◈</span>
+                    News
+                </div>
+
+                <div class="nav-item">
+                    <span>⚡</span>
+                    Tool Activity
+                </div>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <p>CONNECTED TOOLS</p>
+
+                <div class="tool-status">
+                    <span class="status-dot"></span>
+                    Groq LLM
+                </div>
+
+                <div class="tool-status">
+                    <span class="status-dot"></span>
+                    Weather API
+                </div>
+
+                <div class="tool-status">
+                    <span class="status-dot"></span>
+                    Tavily Search
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <header class="topbar">
+
+                <div>
+                    <h1>City Intelligence Center</h1>
+                    <p>AI-powered city information assistant</p>
+                </div>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    SYSTEM ONLINE
+                </div>
+
+            </header>
+
+
+            <section class="dashboard">
+
+                <!-- Chat -->
+                <div class="chat-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>AI Assistant</h2>
+                            <p>Ask anything about a city</p>
+                        </div>
+
+                        <div class="ai-indicator">
+                            <span></span>
+                            AI ACTIVE
+                        </div>
+
+                    </div>
+
+
+                    <div class="chat-box" id="chatBox">
+
+                        <div class="message bot">
+
+                            <div class="avatar">
+                                AI
+                            </div>
+
+                            <div class="message-content">
+
+                                <span class="message-label">
+                                    CITY AGENT
+                                </span>
+
+                                <p>
+                                    Hello! I'm your City Intelligence
+                                    assistant. Ask me about weather,
+                                    news or other city information.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-area">
+
+                        <input
+                            type="text"
+                            id="message"
+                            placeholder="Ask about a city..."
+                            autocomplete="off"
+                        >
+
+                        <button id="sendButton" onclick="sendMessage()">
+                            <span>➤</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Right Panel -->
+                <div class="info-panel">
+
+                    <div class="info-card">
+
+                        <div class="card-title">
+                            <span>☁</span>
+                            WEATHER
+                        </div>
+
+                        <div class="weather-placeholder">
+                            <div class="weather-icon" id="weatherIcon">
+                                ☀
+                            </div>
+
+                            <div>
+                                <h2 id="temperature">--°C</h2>
+                                <p id="weatherCity">
+                                    Ask about a city
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <div class="card-title">
+                            <span>⚡</span>
+                            LIVE ACTIVITY
+                        </div>
+
+                        <div class="activity" id="activity">
+
+                            <div class="activity-item">
+                                <span class="activity-dot"></span>
+
+                                <div>
+                                    <strong>System ready</strong>
+                                    <small>Waiting for request</small>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <div class="card-title">
+                            <span>◈</span>
+                            AI STATUS
+                        </div>
+
+                        <div class="status-row">
+                            <span>Groq</span>
+                            <strong>ONLINE</strong>
+                        </div>
+
+                        <div class="status-row">
+                            <span>Weather API</span>
+                            <strong>ONLINE</strong>
+                        </div>
+
+                        <div class="status-row">
+                            <span>Tavily</span>
+                            <strong>ONLINE</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
