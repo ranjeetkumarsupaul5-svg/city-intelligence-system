@@ -4,3 +4,9 @@ langchain-openai
 python-dotenv
 langchain-mistralai
 langchain-community
+fastapi
+uvicorn
+requests
+langchain-groq
+tavily-python
+rich
